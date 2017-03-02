@@ -1,0 +1,26 @@
+section.main-articles
+    .container
+        .row
+            .col-sm-9
+                - var items = ['Новости', 'Мастер классы', 'Рецепты', 'Статьи'];
+                ul.tabs
+                for item in items
+                    li.tabs__item
+                        button= item
+                .tabs-content
+                    .tabs-content__item
+                        - var articles = [{image: 'news__1.jpg',date: '27 февраля 2016',text: 'Название новости на сайте про событие в несколько строк о барном деле'},{image: 'news__2.jpg',date: '15 сентября 2016',text: 'Еще одно название новости в несколько строк на сайте Комплекс бар'},{image: 'news__3.jpg',date: '27 февраля 2016',text: 'Компплекс бар и название новости на сайте в несколько строк про бары'},];
+
+                        .row    
+                            for article in articles
+                                .col-sm-4
+                                    .articles-preview
+                                        .articles-preview__image
+                                            +image(article.image)
+                                        .articles-preview__content
+                                            .date= article.date
+                                            .text= article.text
+
+            .col-sm-3
+                include ../../components/portfolio-slider/index.jade
+        

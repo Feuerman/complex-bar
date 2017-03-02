@@ -1,0 +1,28 @@
+.city-choise {
+    display: table;
+    &__icon, &__title, &__current {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    &__icon {
+        padding-right: 12px;
+        i {
+            vertical-align: middle;
+        }
+    }
+    &__title {
+        span {
+            color: rgb(119, 119, 119);
+            font-size: 1.5rem;
+        }
+    }  
+    &__current {
+        span {
+
+        }
+        i {
+            margin-left: 13px;
+            vertical-align: middle;
+        }
+    }  
+}

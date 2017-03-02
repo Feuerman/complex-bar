@@ -1,0 +1,10 @@
+section.main-products
+    .container
+        - var items = ['Новинки', 'Хиты продаж', 'Спецпредложения', 'Вам подходят'];
+        ul.tabs
+        for item in items
+            li.tabs__item
+                button= item
+        .tabs-content
+            .tabs-content__item
+                include ../main-product-slider/index.jade

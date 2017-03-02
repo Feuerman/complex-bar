@@ -1,0 +1,29 @@
+.auth-block {
+    margin-top: 15px;
+    &__enter, &__reg {
+        display: inline-block;
+        line-height: 1.2;
+    }
+    button {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__enter {
+        padding-right: 20px;
+        .icon {
+            position: relative;
+            top: 3px;
+        }
+        button {
+
+        }
+    }
+    &__reg {
+        padding-left: 20px;
+        border-left: 2px rgb(186, 186, 186) solid;
+        button {
+
+        }
+    }
+}

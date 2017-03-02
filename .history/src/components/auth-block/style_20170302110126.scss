@@ -1,0 +1,20 @@
+.auth-block {
+    height: 100%;
+    &__enter, &__reg {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    &__enter {
+        .icon {
+
+        }
+        button {
+
+        }
+    }
+    &__reg {
+        button {
+
+        }
+    }
+}

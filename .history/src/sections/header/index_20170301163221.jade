@@ -1,0 +1,28 @@
+header.header
+    .header-top
+        .container
+            .header-top__col.header-top__col--left
+                include ../../components/city-choise/index.jade
+            .header-top__col.header-top__col--center
+                include ../../components/menu/header-menu/index.jade
+            .header-top__col.header-top__col--right
+                include ../../components/auth-block/index.jade
+    .header-content
+        .logo
+            +image('logo.png')
+        .header-content__col.header-content__col--left
+            .header-phone
+                span +7(820) 411-90-60
+                button Заказать звонок
+            .header-mode
+                p пн-пт: 9:00–19:00,
+                p cб: 10:00–18:00
+        .header-content__col.header-content__col--center
+            form.header-search
+                input(type="text" placeholder="Поиск на сайте")
+                button(type="submit")
+                    i.icon.icon__search
+        .header-content__col.header-content__col--right
+            include ../../components/user-shop-panel/index.jade
+section.top-menu-container
+    include ../../components/menu/top-menu/index.jade

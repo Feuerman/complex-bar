@@ -1,0 +1,23 @@
+section.main-category
+    .container
+        .row
+            .col-sm-6.main-category__left
+                .main-category__title Разделы каталога
+
+                - var items = ['Измерительное оборудование', 'Оборудование для механической переработки', 'Тепловое оборудование', 'Упаковочное оборудование', 'Холодильное оборудование'];
+                ul.main-category__list
+                    - for (var i = 0; i < items.length; i++)
+                        li.item
+                            a(href="#")
+                                .item__image
+                                    +image('category__' + (i + 1) + '.png')
+                                span= items[i]
+            .col-sm-6.main-category__right
+                .main-category__title Типы бизнеса
+
+                - var items = ['Ресторан', 'Кейтеринг', 'Кондитерская', 'Кофейня', 'Кафе', 'Пиццерия', 'Столовая', 'Фаст-фуд', 'Бар', 'Отель', 'Суши-бар'];
+                ul.main-category__types
+                    for item in items
+                        li.item
+                            a(href="#")
+                                span= item

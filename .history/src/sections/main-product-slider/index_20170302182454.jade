@@ -1,0 +1,43 @@
+script
+    var products = [{
+        image: 'slider-product__1.jpg',
+        articul: 03020242,
+        name: 'Название товара на сайте в несколько строк',
+        price: '1 200'
+    }]
+
+.products-slider.owl-carousel.js-product-slider    
+    for product in products
+        .products-slider-item
+            .products-slider-item__panel
+                button.item
+                    i.icon.icon__heart--black
+                button.item
+                    i.icon.icon__graf--black
+            .products-slider-item__image
+                +image(product.image)
+            .products-slider-item__content
+                .articul Артикул: #{product.articul}
+                .name= product.name
+                .price
+                    .price__value #{product.price} руб.
+                    button.price__basket
+                        i.icon.icon__basket--white--large
+                .property
+                    .property__title Размер:
+                    .property__list.change-size
+                        button.change-size__item знач.
+                        button.change-size__item знач.
+                        button.change-size__item знач.
+                .property
+                    .property__title Цвет:
+                    .property__list.change-color
+                        button.change-color__item
+                            .change-color__value(style="background-color: rgb(0, 0, 0)")
+                        button.change-color__item
+                            .change-color__value(style="background-color: rgb(139, 183, 133)")
+                        button.change-color__item
+                            .change-color__value(style="background-color: rgb(102, 84, 126)")
+                        button.change-color__item
+                            .change-color__value(style="background-color: rgb(196, 79, 145)")
+

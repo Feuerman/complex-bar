@@ -1,0 +1,15 @@
+section.main-articles
+    .container
+        .row
+            .col-sm-9
+                - var items = ['Новости', 'Мастер классы', 'Рецепты', 'Статьи'];
+                ul.tabs
+                for item in items
+                    li.tabs__item
+                        button= item
+                .tabs-content
+                    .tabs-content__item
+                        p 123
+            .col-sm-3
+                include ../../components/portfolio-slider/index.jade
+        

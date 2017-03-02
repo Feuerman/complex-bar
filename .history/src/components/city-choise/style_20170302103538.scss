@@ -1,0 +1,23 @@
+.city-choise {
+    &__icon {
+        float: left;
+        i {
+
+        }
+    }
+    &__title {
+        float: left;
+        span {
+            color: rgb(119, 119, 119);
+            font-size: 1.5rem;
+        }
+    }  
+    &__current {
+        span {
+
+        }
+        i {
+
+        }
+    }  
+}

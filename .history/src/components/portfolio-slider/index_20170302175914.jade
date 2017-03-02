@@ -1,0 +1,10 @@
+section.portfolio-slider-container
+    .portfolio-slider__title Портфолио
+    .portfolio-slider
+        - var count = 4;
+        - for (var i = 0; i < count; i++)
+            .portfolio-slider-item
+                +image('portfolio-slider__1.jpg')
+                .portfolio-slider-item__desc
+                    .text Название проекта или компании обрезается по количеству  символов
+                    .count 0 #{i + 1}

@@ -1,0 +1,19 @@
+.auth-block {
+    &__enter, &__reg {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    &__enter {
+        .icon {
+
+        }
+        button {
+
+        }
+    }
+    &__reg {
+        button {
+
+        }
+    }
+}

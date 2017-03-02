@@ -1,0 +1,23 @@
+.user-shop-panel {
+    &__item {
+        float: left;
+        .image {
+            position: relative;
+            display: inline-block;
+            & + span {
+
+            }
+            .icon {
+
+            }
+            .count {
+                position: absolute;
+                top: 0;
+                left: 0;
+                span {
+
+                }
+            }
+        }
+    }
+}

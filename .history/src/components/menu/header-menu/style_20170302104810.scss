@@ -1,0 +1,11 @@
+.header-menu {
+    list-style-type: none;
+    color: rgb(119, 119, 119);
+    &__item {
+        display: inline-block;
+    }
+    &__link {        
+        &:hover {
+        }
+    }
+}

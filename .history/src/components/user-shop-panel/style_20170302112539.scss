@@ -1,0 +1,36 @@
+.user-shop-panel {
+    &__item {
+        float: left;
+        .image {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 1px rgb(241, 241, 241) solid;
+            border-radius: 50%;
+            & + span {
+
+            }
+            .icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+            }
+            .count {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 22px;
+                height: 18px;
+                border-radius: 10px;
+                border: 1px rgb(190, 31, 36) solid;
+                span {
+
+                }
+            }
+        }
+    }
+}

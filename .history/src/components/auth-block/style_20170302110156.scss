@@ -1,0 +1,18 @@
+.auth-block {
+    &__enter, &__reg {
+        display: inline-block;
+    }
+    &__enter {
+        .icon {
+
+        }
+        button {
+
+        }
+    }
+    &__reg {
+        button {
+
+        }
+    }
+}

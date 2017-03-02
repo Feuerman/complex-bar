@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
+  <link href="vendor/jQuery-form-styler/jquery.formstyler.css" rel="stylesheet">
+  <link href="vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+  <script src="vendor/owl-carousel/owl.carousel2.thumbs.js"></script>
+  <script src="vendor/picturefill/picturefill.min.js" async></script>
+  <script src="vendor/jQuery-form-styler/jquery.formstyler.min.js"></script>
+  <script src="vendor/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="vendor/zoomsl/zoomsl-3.0.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top__col header-top__col--left">
+            <div class="city-choise">
+              <div class="city-choise__icon"><i class="icon icon__geo--black"></i></div>
+              <div class="city-choise__title"><span>Ваш город:</span></div>
+              <button class="city-choise__current"><span>Санкт-Петербург</span><i class="icon icon__arrow--down--black"></i></button>
+            </div>
+          </div>
+          <div class="header-top__col header-top__col--center">
+            <ul class="header-menu">
+              <li class="header-menu__item"><a href="#" class="header-menu__link">О компании</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">Доставка</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">Наши услуги</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="header-top__col header-top__col--right">
+            <div class="auth-block">
+              <div class="auth-block__enter"><i class="icon icon__user--grey"></i>
+                <button>Вход</button>
+              </div>
+              <div class="auth-block__reg">
+                <button>Регистрация</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-content">
+        <div class="container">
+          <div class="logo"><img src="img/logo.png" alt="">
+          </div>
+          <div class="header-content__col header-content__col--left">
+            <div class="header-phone"><span>+7(820) 411-90-60</span>
+              <button>Заказать звонок</button>
+            </div>
+            <div class="header-mode">
+              <p>пн-пт: 9:00–19:00,</p>
+              <p>cб: 10:00–18:00</p>
+            </div>
+          </div>
+          <div class="header-content__col header-content__col--center">
+            <form class="header-search">
+              <input type="text" placeholder="Поиск на сайте">
+              <button type="submit"><i class="icon icon__search"></i></button>
+            </form>
+          </div>
+          <div class="header-content__col header-content__col--right">
+            <div class="user-shop-panel">
+              <button class="user-shop-panel__item">
+                <div class="image"><i class="icon icon__heart--black"></i>
+                  <div class="count"><span>4</span></div>
+                </div>
+              </button>
+              <button class="user-shop-panel__item">
+                <div class="image"><i class="icon icon__graf--black"></i>
+                  <div class="count"><span>2</span></div>
+                </div>
+              </button>
+              <button class="user-shop-panel__item user-shop-panel__item--red">
+                <div class="image"><i class="icon icon__basket--white"></i>
+                  <div class="count"><span>12</span></div>
+                </div><span>125 600 руб.</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="top-menu-container">
+      <div class="container">
+        <ul class="top-menu">
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Акции</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Посуда и предметы сервировки</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Кухонный и кондитерский инвентарь</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Барный инвентарь</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Сиропы и продукты</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Электронное  Оборудование</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Униформа и предметы интерьера</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Вспомогательный инвентарь</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Хозяйственные товары</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="main-category">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 main-category__left">
+            <div class="main-category__title">Разделы каталога</div>
+            <ul class="main-category__list">
+              <li class="item"><a href="#">
+                  <div class="item__image"><img src="img/category__1.png" alt="">
+                  </div><span>Измерительное оборудование</span></a></li>
+              <li class="item"><a href="#">
+                  <div class="item__image"><img src="img/category__2.png" alt="">
+                  </div><span>Оборудование для механической переработки</span></a></li>
+              <li class="item"><a href="#">
+                  <div class="item__image"><img src="img/category__3.png" alt="">
+                  </div><span>Тепловое оборудование</span></a></li>
+              <li class="item"><a href="#">
+                  <div class="item__image"><img src="img/category__4.png" alt="">
+                  </div><span>Упаковочное оборудование</span></a></li>
+              <li class="item"><a href="#">
+                  <div class="item__image"><img src="img/category__5.png" alt="">
+                  </div><span>Холодильное оборудование</span></a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 main-category__right">
+            <div class="main-category__title">Типы бизнеса</div>
+            <ul class="main-category__types">
+              <li class="item"><a href="#"><span>Ресторан</span></a></li>
+              <li class="item"><a href="#"><span>Кейтеринг</span></a></li>
+              <li class="item"><a href="#"><span>Кондитерская</span></a></li>
+              <li class="item"><a href="#"><span>Кофейня</span></a></li>
+              <li class="item"><a href="#"><span>Кафе</span></a></li>
+              <li class="item"><a href="#"><span>Пиццерия</span></a></li>
+              <li class="item"><a href="#"><span>Столовая</span></a></li>
+              <li class="item"><a href="#"><span>Фаст-фуд</span></a></li>
+              <li class="item"><a href="#"><span>Бар</span></a></li>
+              <li class="item"><a href="#"><span>Отель</span></a></li>
+              <li class="item"><a href="#"><span>Суши-бар</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-products">
+      <div class="container">
+        <ul class="tabs"></ul>
+        <li class="tabs__item">
+          <button>Новинки</button>
+        </li>
+        <li class="tabs__item">
+          <button>Хиты продаж</button>
+        </li>
+        <li class="tabs__item">
+          <button>Спецпредложения</button>
+        </li>
+        <li class="tabs__item">
+          <button>Вам подходят</button>
+        </li>
+        <div class="tabs-content">
+          <div class="tabs-content__item">
+            <div class="products-slider owl-carousel js-product-slider">   
+              <div class="products-slider-item">
+                <div class="products-slider-item__panel">
+                  <button class="item"><i class="icon icon__heart--black"></i></button>
+                  <button class="item"><i class="icon icon__graf--black"></i></button>
+                </div>
+                <div class="products-slider-item__image"><img src="img/slider-product__1.jpg" alt="">
+                </div>
+                <div class="products-slider-item__content">
+                  <div class="articul">Артикул: 794786</div>
+                  <div class="name">Название товара на сайте в несколько строк</div>
+                  <div class="price">
+                    <div class="price__value">1 200 руб.</div>
+                    <button class="price__basket"><i class="icon icon__basket--white--large"></i></button>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Размер:</div>
+                    <div class="property__list change-size">
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                    </div>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Цвет:</div>
+                    <div class="property__list change-color">
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(0, 0, 0)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(139, 183, 133)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(102, 84, 126)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(196, 79, 145)" class="change-color__value"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-slider-item">
+                <div class="products-slider-item__panel">
+                  <button class="item"><i class="icon icon__heart--black"></i></button>
+                  <button class="item"><i class="icon icon__graf--black"></i></button>
+                </div>
+                <div class="products-slider-item__image"><img src="img/slider-product__2.jpg" alt="">
+                </div>
+                <div class="products-slider-item__content">
+                  <div class="articul">Артикул: 1238818</div>
+                  <div class="name">Длинное название товара в две строки на сайте</div>
+                  <div class="price">
+                    <div class="price__value">670 руб.</div>
+                    <button class="price__basket"><i class="icon icon__basket--white--large"></i></button>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Размер:</div>
+                    <div class="property__list change-size">
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                    </div>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Цвет:</div>
+                    <div class="property__list change-color">
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(0, 0, 0)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(139, 183, 133)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(102, 84, 126)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(196, 79, 145)" class="change-color__value"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-slider-item">
+                <div class="products-slider-item__panel">
+                  <button class="item"><i class="icon icon__heart--black"></i></button>
+                  <button class="item"><i class="icon icon__graf--black"></i></button>
+                </div>
+                <div class="products-slider-item__image"><img src="img/slider-product__3.jpg" alt="">
+                </div>
+                <div class="products-slider-item__content">
+                  <div class="articul">Артикул: 794786</div>
+                  <div class="name">Еще одно название товара в несколько строк</div>
+                  <div class="price">
+                    <div class="price__value">4 560 руб.</div>
+                    <button class="price__basket"><i class="icon icon__basket--white--large"></i></button>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Размер:</div>
+                    <div class="property__list change-size">
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                    </div>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Цвет:</div>
+                    <div class="property__list change-color">
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(0, 0, 0)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(139, 183, 133)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(102, 84, 126)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(196, 79, 145)" class="change-color__value"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-slider-item">
+                <div class="products-slider-item__panel">
+                  <button class="item"><i class="icon icon__heart--black"></i></button>
+                  <button class="item"><i class="icon icon__graf--black"></i></button>
+                </div>
+                <div class="products-slider-item__image"><img src="img/slider-product__4.jpg" alt="">
+                </div>
+                <div class="products-slider-item__content">
+                  <div class="articul">Артикул: 1238818</div>
+                  <div class="name">Длинное название товара в две строки на сайте</div>
+                  <div class="price">
+                    <div class="price__value">12 678 руб.</div>
+                    <button class="price__basket"><i class="icon icon__basket--white--large"></i></button>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Размер:</div>
+                    <div class="property__list change-size">
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                    </div>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Цвет:</div>
+                    <div class="property__list change-color">
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(0, 0, 0)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(139, 183, 133)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(102, 84, 126)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(196, 79, 145)" class="change-color__value"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-slider-item">
+                <div class="products-slider-item__panel">
+                  <button class="item"><i class="icon icon__heart--black"></i></button>
+                  <button class="item"><i class="icon icon__graf--black"></i></button>
+                </div>
+                <div class="products-slider-item__image"><img src="img/slider-product__1.jpg" alt="">
+                </div>
+                <div class="products-slider-item__content">
+                  <div class="articul">Артикул: 794786</div>
+                  <div class="name">Название товара на сайте в несколько строк</div>
+                  <div class="price">
+                    <div class="price__value">1 200 руб.</div>
+                    <button class="price__basket"><i class="icon icon__basket--white--large"></i></button>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Размер:</div>
+                    <div class="property__list change-size">
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                    </div>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Цвет:</div>
+                    <div class="property__list change-color">
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(0, 0, 0)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(139, 183, 133)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(102, 84, 126)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(196, 79, 145)" class="change-color__value"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-slider-item">
+                <div class="products-slider-item__panel">
+                  <button class="item"><i class="icon icon__heart--black"></i></button>
+                  <button class="item"><i class="icon icon__graf--black"></i></button>
+                </div>
+                <div class="products-slider-item__image"><img src="img/slider-product__1.jpg" alt="">
+                </div>
+                <div class="products-slider-item__content">
+                  <div class="articul">Артикул: 794786</div>
+                  <div class="name">Название товара на сайте в несколько строк</div>
+                  <div class="price">
+                    <div class="price__value">1 200 руб.</div>
+                    <button class="price__basket"><i class="icon icon__basket--white--large"></i></button>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Размер:</div>
+                    <div class="property__list change-size">
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                    </div>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Цвет:</div>
+                    <div class="property__list change-color">
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(0, 0, 0)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(139, 183, 133)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(102, 84, 126)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(196, 79, 145)" class="change-color__value"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-slider-item">
+                <div class="products-slider-item__panel">
+                  <button class="item"><i class="icon icon__heart--black"></i></button>
+                  <button class="item"><i class="icon icon__graf--black"></i></button>
+                </div>
+                <div class="products-slider-item__image"><img src="img/slider-product__2.jpg" alt="">
+                </div>
+                <div class="products-slider-item__content">
+                  <div class="articul">Артикул: 1238818</div>
+                  <div class="name">Длинное название товара в две строки на сайте</div>
+                  <div class="price">
+                    <div class="price__value">670 руб.</div>
+                    <button class="price__basket"><i class="icon icon__basket--white--large"></i></button>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Размер:</div>
+                    <div class="property__list change-size">
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                    </div>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Цвет:</div>
+                    <div class="property__list change-color">
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(0, 0, 0)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(139, 183, 133)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(102, 84, 126)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(196, 79, 145)" class="change-color__value"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-slider-item">
+                <div class="products-slider-item__panel">
+                  <button class="item"><i class="icon icon__heart--black"></i></button>
+                  <button class="item"><i class="icon icon__graf--black"></i></button>
+                </div>
+                <div class="products-slider-item__image"><img src="img/slider-product__3.jpg" alt="">
+                </div>
+                <div class="products-slider-item__content">
+                  <div class="articul">Артикул: 794786</div>
+                  <div class="name">Еще одно название товара в несколько строк</div>
+                  <div class="price">
+                    <div class="price__value">4 560 руб.</div>
+                    <button class="price__basket"><i class="icon icon__basket--white--large"></i></button>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Размер:</div>
+                    <div class="property__list change-size">
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                    </div>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Цвет:</div>
+                    <div class="property__list change-color">
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(0, 0, 0)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(139, 183, 133)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(102, 84, 126)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(196, 79, 145)" class="change-color__value"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-slider-item">
+                <div class="products-slider-item__panel">
+                  <button class="item"><i class="icon icon__heart--black"></i></button>
+                  <button class="item"><i class="icon icon__graf--black"></i></button>
+                </div>
+                <div class="products-slider-item__image"><img src="img/slider-product__4.jpg" alt="">
+                </div>
+                <div class="products-slider-item__content">
+                  <div class="articul">Артикул: 1238818</div>
+                  <div class="name">Длинное название товара в две строки на сайте</div>
+                  <div class="price">
+                    <div class="price__value">12 678 руб.</div>
+                    <button class="price__basket"><i class="icon icon__basket--white--large"></i></button>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Размер:</div>
+                    <div class="property__list change-size">
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                    </div>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Цвет:</div>
+                    <div class="property__list change-color">
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(0, 0, 0)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(139, 183, 133)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(102, 84, 126)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(196, 79, 145)" class="change-color__value"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-slider-item">
+                <div class="products-slider-item__panel">
+                  <button class="item"><i class="icon icon__heart--black"></i></button>
+                  <button class="item"><i class="icon icon__graf--black"></i></button>
+                </div>
+                <div class="products-slider-item__image"><img src="img/slider-product__1.jpg" alt="">
+                </div>
+                <div class="products-slider-item__content">
+                  <div class="articul">Артикул: 794786</div>
+                  <div class="name">Название товара на сайте в несколько строк</div>
+                  <div class="price">
+                    <div class="price__value">1 200 руб.</div>
+                    <button class="price__basket"><i class="icon icon__basket--white--large"></i></button>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Размер:</div>
+                    <div class="property__list change-size">
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                      <button class="change-size__item">знач.</button>
+                    </div>
+                  </div>
+                  <div class="property">
+                    <div class="property__title">Цвет:</div>
+                    <div class="property__list change-color">
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(0, 0, 0)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(139, 183, 133)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(102, 84, 126)" class="change-color__value"></div>
+                      </button>
+                      <button class="change-color__item">
+                        <div style="background-color: rgb(196, 79, 145)" class="change-color__value"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-articles">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <ul class="tabs"></ul>
+            <li class="tabs__item">
+              <button>Новости</button>
+            </li>
+            <li class="tabs__item">
+              <button>Мастер классы</button>
+            </li>
+            <li class="tabs__item">
+              <button>Рецепты</button>
+            </li>
+            <li class="tabs__item">
+              <button>Статьи</button>
+            </li>
+            <div class="tabs-content">
+              <div class="tabs-content__item">
+                <div class="row">   
+                  <div class="col-sm-4">
+                    <div class="articles-preview">
+                      <div class="articles-preview__image"><img src="img/news__1.jpg" alt="">
+                      </div>
+                      <div class="articles-preview__content">
+                        <div class="date">27 февраля 2016</div>
+                        <div class="text">Название новости на сайте про событие в несколько строк о барном деле</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="articles-preview">
+                      <div class="articles-preview__image"><img src="img/news__2.jpg" alt="">
+                      </div>
+                      <div class="articles-preview__content">
+                        <div class="date">15 сентября 2016</div>
+                        <div class="text">Еще одно название новости в несколько строк на сайте Комплекс бар</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="articles-preview">
+                      <div class="articles-preview__image"><img src="img/news__1.jpg" alt="">
+                      </div>
+                      <div class="articles-preview__content">
+                        <div class="date">27 февраля 2016</div>
+                        <div class="text">Компплекс бар и название новости на сайте в несколько строк про бары</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <section class="portfolio-slider-container">
+              <div class="portfolio-slider__title">Портфолио</div>
+              <div class="portfolio-slider owl-carousel js-portfolio-slider">
+                <div class="portfolio-slider-item"><img src="img/portfolio-slider__1.jpg" alt="">
+                  <div class="portfolio-slider-item__desc">
+                    <div class="text">Название проекта или компании обрезается по количеству  символов</div>
+                    <div class="count">0 1</div>
+                  </div>
+                </div>
+                <div class="portfolio-slider-item"><img src="img/portfolio-slider__1.jpg" alt="">
+                  <div class="portfolio-slider-item__desc">
+                    <div class="text">Название проекта или компании обрезается по количеству  символов</div>
+                    <div class="count">0 2</div>
+                  </div>
+                </div>
+                <div class="portfolio-slider-item"><img src="img/portfolio-slider__1.jpg" alt="">
+                  <div class="portfolio-slider-item__desc">
+                    <div class="text">Название проекта или компании обрезается по количеству  символов</div>
+                    <div class="count">0 3</div>
+                  </div>
+                </div>
+                <div class="portfolio-slider-item"><img src="img/portfolio-slider__1.jpg" alt="">
+                  <div class="portfolio-slider-item__desc">
+                    <div class="text">Название проекта или компании обрезается по количеству  символов</div>
+                    <div class="count">0 4</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="vendor/fancybox/jquery.fancybox.js"></script>
+    <footer class="footer"></footer>
+  </div>
+</body>

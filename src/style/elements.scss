@@ -1,0 +1,70 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+button, input, a {
+    outline: none;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+a {
+}
+
+p {
+    margin: 0;
+}
+
+.change-size {
+    overflow: hidden;
+    &__item {
+        display: block;
+        float: left;
+        width: 43px;
+        height: 25px;
+        border: 1px rgb(215, 215, 215) solid;
+        border-radius: 13px;
+        font-size: 1.2rem;
+        &.active {
+            border-color: rgb(190, 31, 36);
+        }
+    }
+    &__item + &__item {
+        margin-left: 10px;
+    }
+}
+
+.change-color {
+    overflow: hidden;
+    &__item {
+        position: relative;
+        display: block;
+        float: left;
+        width: 24px;
+        height: 24px;
+        border: 1px rgb(215, 215, 215) solid;
+        border-radius: 50%;
+        &.active {
+            border-color: rgb(190, 31, 36);
+        }
+    }
+    &__item + &__item {
+        margin-left: 10px;
+    }
+    &__value {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+}
