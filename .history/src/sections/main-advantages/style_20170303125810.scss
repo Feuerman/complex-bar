@@ -1,0 +1,23 @@
+.main-advantages {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    .advantages-item {
+        text-align: center;
+        &__image {
+            .icon {
+
+            }
+        }
+        &__title {
+            margin-bottom: 15px;
+            span {
+                font-size: 3.6rem;
+            }
+        }
+        &__text {
+            span {
+
+            }
+        }
+    }   
+}

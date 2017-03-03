@@ -1,0 +1,37 @@
+.main-slider {
+    position: relative;
+    &-container {
+        background-color: rgb(36, 31, 28);
+    }
+    &-item {
+        color: rgb(255, 255, 255);
+        img {
+
+        }
+    }
+    &__content {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        .title {
+            &__second {
+
+            }
+        } 
+        .desc {
+            &__image {
+                color:#fff;
+                img {
+                    width: 55px;
+                }
+            }
+            &__text {
+                p {
+                    & + p {
+
+                    }
+                }
+            }
+        }
+    }
+}

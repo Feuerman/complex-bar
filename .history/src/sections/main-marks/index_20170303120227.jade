@@ -1,0 +1,14 @@
+section.main-marks
+    .container
+        .main-marks__header
+            .main-marks__title ТОРГОВЫЕ МАРКИ
+            .main-marks__switch
+                span.value(data-switch-value="1") Эксклюзивные
+                include ../../components/switch/index.jade
+                span.value(data-switch-value="2") Неэксклюзивные
+            a(href="#") ВСЕ марки
+        .marks-slider.owl-carousel.js-marks-slider(data-overflow="visible") 
+            - var count = 6
+            - for (var i = 1; i <= count; i++)
+                .marks-slider__item
+                    +image('trade-mark__' + i + '.jpg')

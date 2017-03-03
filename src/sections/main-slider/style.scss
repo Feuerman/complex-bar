@@ -1,0 +1,55 @@
+.main-slider {
+    position: relative;
+    &-container {
+        background-color: rgb(36, 31, 28);
+    }
+    &-item {
+        color: rgb(255, 255, 255);
+        img {
+
+        }
+        &__content {
+            position: absolute;
+            max-width: 600px;
+            left: 110px;
+            top: 0;
+            padding-top: 80px;
+            .title {
+                font-family: PFDin-med;
+                font-size: 5.2rem;
+                line-height: 1.2em;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                &__second {
+                    margin-bottom: 10px;
+                    line-height: 1;
+                    color: rgb(195, 0, 47);
+                    letter-spacing: 7px;
+                }
+            } 
+            .desc {
+                margin-top: 30px;
+                &__image {
+                    display: table-cell;
+                    padding-right: 20px;
+                    padding-top: 5px;
+                    img {
+                        width: 65px;
+                    }
+                }
+                &__text {
+                    display: table-cell;
+                    vertical-align: top;
+                    font-family: PFDin-reg;
+                    p {
+                        max-width: 400px;
+                        font-size: 1.6rem;
+                        & + p {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

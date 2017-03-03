@@ -1,0 +1,16 @@
+section.main-slider-container
+    .container
+        .main-slider.owl-carousel.js-main-slider(data-arrows="white")
+            - var count = 4
+            - for (var i = 0; i < count; i++)
+                .main-slider-item
+                    +image('main-slider__1.jpg')
+                    .main-slider-item__content
+                        .title.title__second FUGA
+                        .title Деревянные доски ручной работы
+                        .desc
+                            .desc__image
+                                +image('logo.png')
+                            .desc__text
+                                p Комплекс-Бар — эксклюзивный представитель компании FUGA в сегменте HoReCa
+                                p Возможность производства на заказ с логотипом клиента

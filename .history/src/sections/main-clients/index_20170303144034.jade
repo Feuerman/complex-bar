@@ -1,0 +1,8 @@
+section.main-clients
+    .container
+        .main-clients__title Наши клиенты
+        .clients-slider.owl-carousel.js-clients-slider(data-overflow="visible" data-arrows="outside grey")
+            - var count = 5
+            - for (var i = 1; i <= count; i++)
+                .clients-slider__item
+                    +image('client__' + i + '.jpg')

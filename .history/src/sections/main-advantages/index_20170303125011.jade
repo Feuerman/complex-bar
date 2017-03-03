@@ -1,0 +1,12 @@
+section.main-advantages
+    .container
+        .row
+            - var items = [{title: '6 лет',test: 'На рынке'},{title: '90 000',test: 'Посетителей в месяц'},{title: '200',test: 'Сотрудников'},{title: '50 000',test: 'Товарных наименований'},{title: '35',test: 'Городов'},{title: '3 000 000',test: 'Просмотренных страниц'},];
+            - for (var i = 1; i <= items.length; i++)
+                .col-sm-2.advantages-item
+                    .advantages-item__image
+                        i.icon.icon__advantages-i
+                    .advantages-item__title
+                        span= items[i]['title'']
+                    .advantages-item__text
+                        span= items[i]

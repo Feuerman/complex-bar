@@ -1,0 +1,32 @@
+.main-slider {
+    position: relative;
+    &-container {
+        background-color: rgb(0, 0, 0);
+    }
+    &-item {
+        img {
+
+        }
+    }
+    &__content {
+        .title {
+            &__second {
+
+            }
+        } 
+        .desc {
+            &__image {
+                img {
+
+                }
+            }
+            &__text {
+                p {
+                    & + p {
+
+                    }
+                }
+            }
+        }
+    }
+}

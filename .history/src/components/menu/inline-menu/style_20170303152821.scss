@@ -1,0 +1,16 @@
+.inline-menu {
+    list-style-type: none;
+    &__item {
+        display: inline-block;
+        & + &__item {
+            margin-left: 15px;
+        }
+    }
+    &__link {  
+        padding: 10px;      
+        color: rgb(119, 119, 119);
+        &:hover {
+            color: rgb(119, 119, 119);
+        }
+    }
+}

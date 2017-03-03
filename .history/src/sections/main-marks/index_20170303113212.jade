@@ -1,0 +1,13 @@
+section.main-marks
+    .container
+        .main-marks__header
+            .main-marks__title ТОРГОВЫЕ МАРКИ
+            .main-marks__switch
+                span.value(data-switch-value="1") Эксклюзивные
+                include ../../components/switch/index.jade
+                span.value(data-switch-value="2") Неэксклюзивные
+        .clients-slider.owl-carousel.js-clients-slider
+            - var count = 5
+            - for (var i = 1; i <= count; i++)
+                .clients-slider__item
+                    +image('client__' + i + '.jpg')

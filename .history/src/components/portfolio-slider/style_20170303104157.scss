@@ -1,0 +1,75 @@
+.portfolio-slider {
+    &-container {
+        position: relative;
+    }
+    .owl-dots {
+        position: absolute;
+        bottom: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 15px 9px 15px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        .owl-dot {
+            float: left;
+            & + .owl-dot {
+                margin-left: 8px;
+            }
+            span {   
+                display: block;             
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: rgb(255, 255, 255);
+            }
+            &.active {
+                span {
+                    margin-top: -2px;
+                    width: 10px;
+                    height: 10px;
+                    background-color: rgb(190, 31, 36);
+                }
+            }
+        }
+    }
+    &__title {
+        z-index: 20;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 15px;
+        background-color: rgb(0, 0, 0);
+        font-size: 2.2rem;
+        line-height: 1;
+        color: rgb(255, 255, 255);
+    }
+    &-item {
+        img {
+
+        }
+        &__desc {
+            position: absolute;
+            bottom: 50px;
+            width: calc(100% - 23px);
+            padding: 10px 15px;
+            background-color: rgba(191, 44, 44, 0.8);
+            .text {
+                width: 170px;
+                font-size: 1.5rem;
+                line-height: 1.2em;
+                color: rgb(255, 255, 255);
+            }
+            .count {
+                position: absolute;
+                top: 50%;
+                right: -10px;
+                transform: translateY(-50%);
+                margin: auto;
+                font-size: 4.4rem;
+                font-weight: 600;
+                letter-spacing: -3px;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}

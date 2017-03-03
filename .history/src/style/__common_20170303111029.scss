@@ -1,0 +1,97 @@
+body {
+    color: rgb(0, 0, 0);
+    font-family: PFDin-reg;
+}
+
+.page-wrapper {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }   
+}
+
+.tabs {
+    list-style-type: none;
+    &__item {
+        display: inline-block;
+        button {
+            padding-bottom: 7px;
+            border-bottom: 2px transparent solid;
+            font-size: 2.2rem;
+            line-height: 1.2em;
+        }
+        &.active {
+            button {
+                color: rgb(195, 0, 47);
+                border-color: rgb(195, 0, 47);
+            }
+        }
+    }
+    &__item + &__item {
+        margin-left: 45px;
+    }
+}
+
+.owl-carousel {
+    .owl-item {
+        img {
+            display: inline-block;
+        }
+    }
+    .owl-stage-outer {
+        overflow: visible;
+    }
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(225, 225, 225) solid;
+    text-indent: -9999px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: $icon-arrow-grey-left-width;
+        height: $icon-arrow-grey-left-height;
+        background-repeat: no-repeat;
+        background-image: url($icon-arrow-grey-left-image);
+        background-position: $icon-arrow-grey-left-offset-x $icon-arrow-grey-left-offset-y;
+    }
+    &:hover {
+        &::before {
+            background-position: $icon-arrow-red-right-offset-x $icon-arrow-red-right-offset-y;
+        }
+    }
+}
+
+.owl-prev {
+    left: -90px;
+    &:hover {
+        &::before {
+           transform: rotate(180deg); 
+        }
+    }
+    
+}
+.owl-next {
+    right: -90px;
+    &::before {
+        transform: rotate(180deg) translateX(-2px);
+    }
+    &:hover {
+        &::before {
+            transform: rotate(0) translateX(2px);
+        }
+    }
+}

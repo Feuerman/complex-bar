@@ -1,0 +1,31 @@
+.main-advantages {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    font-family: PFDin-light;
+    .advantages-item {
+        text-align: center;
+        &__image {
+            height: 60px;
+            .icon {
+
+            }
+        }
+        &__title {
+            margin-bottom: 15px;
+            span {
+                font-size: 3.6rem;
+                line-height: 1;
+                letter-spacing: -1px;
+            }
+        }
+        &__text {
+            display: table-cell;
+            vertical-align: middle;
+            height: 40px;
+            span {
+                font-size: 1.8rem;
+                line-height: 1.2em;
+            }
+        }
+    }   
+}
