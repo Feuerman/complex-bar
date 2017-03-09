@@ -1,0 +1,12 @@
+extends sections/header/index
+include templates/head.jade
+body
+	.page-wrapper
+		include sections/header/index.jade
+		include sections/contacts-map/index.jade
+		include sections/contacts-list/index.jade
+		include sections/footer/index.jade
+
+append sharedVars
+- var breadcrumbs = ["Главная", "Название родительского раздела 1 уровня", "Название раздела 2 уровня", "Раздела 3 уровня"]
+- var pageTitle = "Контакты"

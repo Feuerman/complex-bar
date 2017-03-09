@@ -61,4 +61,24 @@ $(document).ready(function () {
             }
         }
     });
+    var inputSearch = $('.header-search input'),
+        resultSearch = $('.search-result-modal');
+
+    $('body').on('click', function(e) {
+        var target = $(e.target);
+        if (!target.closest('.header-search input').length && !target.closest('.search-result-modal').length) {
+            resultSearch.removeClass('active');
+        }
+    });
+
+    // developer scripts
+    inputSearch.on('keyup', function() {
+        var searchLength = $(this).val().length;
+        if(searchLength > 4) {
+            resultSearch.addClass('active');
+        } else {
+            resultSearch.removeClass('active');
+        }
+    });
+    // developer scripts
 });

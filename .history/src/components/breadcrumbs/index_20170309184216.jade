@@ -1,0 +1,9 @@
+ul.breadcrumbs
+  - for (var i = 0; i < breadcrumbs.length; i++)
+        - if (i == (breadcrumbs.length - 1))
+            li.breadcrumbs__sep
+                span breadcrumbs[i]
+        li.breadcrumbs__item
+            a.breadcrumbs__link(href="#") breadcrumbs[i]
+        li.breadcrumbs__sep
+            span —

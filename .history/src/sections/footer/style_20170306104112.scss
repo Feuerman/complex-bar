@@ -1,0 +1,40 @@
+.footer {
+    background-color: rgb(252, 252, 252);
+    &-top {
+        &__left {
+            .title {
+             
+            }
+            .phone {
+                .icon {
+
+                }
+                span {
+
+                }
+            }
+            .button--red {
+
+            }
+            .text-content {
+                &__title {
+
+                }
+                p {
+
+                }
+            }
+        }
+        &__right {
+
+        }
+    }
+    &-bottom {
+        .copyright {
+
+        }
+        .social {
+
+        }
+    }
+}

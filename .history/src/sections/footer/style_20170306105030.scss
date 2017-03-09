@@ -1,0 +1,57 @@
+.footer {
+    background-color: rgb(250, 250, 250);
+    &-top {
+        padding-top: 50px;
+        border-top: 1px rgb(238, 238, 238) solid;
+        &__left {
+            .title {
+                font-size: 2.2rem;
+                line-height: 1.1;
+                font-family: PFDin-med;
+            }
+            .phone {
+                margin-top: 25px;
+                .icon {
+                    margin-right: 10px;
+                }
+                span {
+                    position: relative;
+                    top: -3px;              
+                    font-size: 1.6rem;
+                    font-family: PFDin-med;
+                }
+            }
+            .address {
+                margin-top: 15px;
+                font-size: 1.4rem;
+                line-height: 1.5em;
+            }
+            .form-subscribe {
+                margin-top: 30px;
+            }
+            .button--red {
+
+            }
+            .text-content {
+                &__title {
+
+                }
+                p {
+
+                }
+            }
+        }
+        &__right {
+
+        }
+    }
+    &-bottom {
+        border-top: 1px rgb(238, 238, 238) solid;
+        .copyright {
+
+        }
+        .social {
+
+        }
+    }
+}

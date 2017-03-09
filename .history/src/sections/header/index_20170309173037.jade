@@ -1,0 +1,72 @@
+header.header
+    .header-top
+        .container
+            .header-top__col.header-top__col--left
+                include ../../components/city-choise/index.jade
+            .header-top__col.header-top__col--center
+                - var items = ['О компании', 'Доставка', 'Наши услуги', 'Контакты'];
+                include ../../components/menu/inline-menu/index.jade
+            .header-top__col.header-top__col--right
+                include ../../components/auth-block/index.jade
+    .header-content
+        .container
+            .logo
+                +image('logo.png')
+            .header-content__col.header-content__col--left
+                .header-phone
+                    span +7(820) 411-90-60
+                    button Заказать звонок
+                .header-mode
+                    p пн-пт: 9:00–19:00,
+                    p cб: 10:00–18:00
+            .header-content__col.header-content__col--center
+                form.header-search
+                    input(type="text" placeholder="Поиск на сайте")
+                    button(type="submit")
+                        i.icon.icon__search
+                .search-result-modal
+                    .search-result-modal__group
+                        .title Категория
+                        .results
+                            p
+                                b Барный&nbsp;
+                                | инвентарь
+                    .search-result-modal__group
+                        .title Бренд
+                        .results
+                            p
+                                b Барный&nbsp;
+                                | бренд
+                            p
+                                | Еще один&nbsp;
+                                b барный
+                    .search-result-modal__group
+                        .title Категория + бренд
+                        .results
+                            p
+                                b Барный
+                    .search-result-modal__group
+                        .title Товары
+                        .results
+                            .results__product
+                                .image
+                                    img(src="img/product-small__1.png", alt="")
+                                .name
+                                    span Название товара
+                            .results__product
+                                .image
+                                    img(src="img/product-small__2.png", alt="")
+                                .name
+                                    span Еще одно название товара
+                            .results__product
+                                .image
+                                    img(src="img/product-small__3.png", alt="")
+                                .name
+                                    span Название товара
+                    .search-result-modal__footer
+                        a(href="#") Все результаты (28)  →
+            .header-content__col.header-content__col--right
+                include ../../components/user-shop-panel/index.jade
+section.top-menu-container
+    .container
+        include ../../components/menu/top-menu/index.jade

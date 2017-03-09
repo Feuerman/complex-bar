@@ -1,0 +1,45 @@
+.search-result-modal {
+    z-index: 200;
+    position: absolute;
+    top: calc(50% + 18px);
+    left: 0;
+    width: 130%;
+    padding: 20px 20px 0 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(235, 235, 235) solid;
+    &__group {
+        .title {
+            color: rgb(119, 119, 119);
+
+        }
+        .results {
+            p {
+
+            }
+            b {
+
+            }
+            &__product {
+                .image {
+                    img {
+
+                    }
+                }
+                .name {
+                    span {
+
+                    }
+                }
+            }
+        }
+    }
+    &__footer {
+        padding: 20px 0;
+        border-top: 1px rgb(235, 235, 235) solid;
+        text-align: center;
+        a {
+            font-family: PFDin-bold;
+            color: rgb(190, 31, 36);
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.search-result-modal {
+    z-index: 200;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    &__group {
+        .title {
+
+        }
+        .results {
+            p {
+
+            }
+            b {
+
+            }
+            &__product {
+                .image {
+                    img {
+
+                    }
+                }
+                .name {
+                    span {
+
+                    }
+                }
+            }
+        }
+    }
+    &__footer {
+        a {
+
+        }
+    }
+}

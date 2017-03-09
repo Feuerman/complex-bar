@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
+  <link href="vendor/jQuery-form-styler/jquery.formstyler.css" rel="stylesheet">
+  <link href="vendor/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+  <script src="vendor/owl-carousel/owl.carousel2.thumbs.js"></script>
+  <script src="vendor/picturefill/picturefill.min.js" async></script>
+  <script src="vendor/jQuery-form-styler/jquery.formstyler.min.js"></script>
+  <script src="vendor/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="vendor/zoomsl/zoomsl-3.0.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top__col header-top__col--left">
+            <div class="city-choise">
+              <div class="city-choise__icon"><i class="icon icon__geo--black"></i></div>
+              <div class="city-choise__title"><span>Ваш город:</span></div>
+              <button class="city-choise__current"><span>Санкт-Петербург</span><i class="icon icon__arrow--down--black"></i></button>
+            </div>
+          </div>
+          <div class="header-top__col header-top__col--center">
+            <ul class="inline-menu">
+              <li class="inline-menu__item"><a href="#" class="inline-menu__link">О компании</a></li>
+              <li class="inline-menu__item"><a href="#" class="inline-menu__link">Доставка</a></li>
+              <li class="inline-menu__item"><a href="#" class="inline-menu__link">Наши услуги</a></li>
+              <li class="inline-menu__item"><a href="#" class="inline-menu__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="header-top__col header-top__col--right">
+            <div class="auth-block">
+              <div class="auth-block__enter"><i class="icon icon__user--grey"></i>
+                <button>Вход</button>
+              </div>
+              <div class="auth-block__reg">
+                <button>Регистрация</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-content">
+        <div class="container">
+          <div class="logo"><img src="img/logo.png" alt="">
+          </div>
+          <div class="header-content__col header-content__col--left">
+            <div class="header-phone"><span>+7(820) 411-90-60</span>
+              <button>Заказать звонок</button>
+            </div>
+            <div class="header-mode">
+              <p>пн-пт: 9:00–19:00,</p>
+              <p>cб: 10:00–18:00</p>
+            </div>
+          </div>
+          <div class="header-content__col header-content__col--center">
+            <form class="header-search">
+              <input type="text" placeholder="Поиск на сайте">
+              <button type="submit"><i class="icon icon__search"></i></button>
+            </form>
+            <div class="search-result-modal">
+              <div class="search-result-modal__content">
+                <div class="search-result-modal__group">
+                  <div class="title">Категория</div>
+                  <div class="results">
+                    <p><b>Барный&nbsp;</b>инвентарь</p>
+                  </div>
+                </div>
+                <div class="search-result-modal__group">
+                  <div class="title">Бренд</div>
+                  <div class="results">
+                    <p><b>Барный&nbsp;</b>бренд</p>
+                    <p>Еще один&nbsp;<b>барный</b></p>
+                  </div>
+                </div>
+                <div class="search-result-modal__group">
+                  <div class="title">Категория + бренд</div>
+                  <div class="results">
+                    <p><b>Барный</b></p>
+                  </div>
+                </div>
+                <div class="search-result-modal__group">
+                  <div class="title">Товары</div>
+                  <div class="results">
+                    <div class="results__product">
+                      <div class="image"><img src="img/product-small__1.png" alt=""></div>
+                      <div class="name"><span>Название товара</span></div>
+                    </div>
+                    <div class="results__product">
+                      <div class="image"><img src="img/product-small__2.png" alt=""></div>
+                      <div class="name"><span>Еще одно название товара</span></div>
+                    </div>
+                    <div class="results__product">
+                      <div class="image"><img src="img/product-small__3.png" alt=""></div>
+                      <div class="name"><span>Название товара</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-result-modal__footer"><a href="#"><span>Все результаты (28)</span><i class="icon icon__arrow--red--long"></i></a></div>
+            </div>
+          </div>
+          <div class="header-content__col header-content__col--right">
+            <div class="user-shop-panel">
+              <button class="user-shop-panel__item">
+                <div class="image"><i class="icon icon__heart--black"></i>
+                  <div class="count"><span>4</span></div>
+                </div>
+              </button>
+              <button class="user-shop-panel__item">
+                <div class="image"><i class="icon icon__graf--black"></i>
+                  <div class="count"><span>2</span></div>
+                </div>
+              </button>
+              <button class="user-shop-panel__item user-shop-panel__item--red">
+                <div class="image"><i class="icon icon__basket--white"></i>
+                  <div class="count"><span>12</span></div>
+                </div><span>125 600 руб.</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="top-menu-container">
+      <div class="container">
+        <ul class="top-menu">
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Акции</a>
+            <ul class="top-menu-sub">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 top-menu-sub__left">
+                    <div class="top-menu-sub__title">Разделы каталога</div>
+                    <ul class="top-menu-sub__list">
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__1.png" alt="">
+                          </div><span>Измерительное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__2.png" alt="">
+                          </div><span>Оборудование для механической переработки</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__3.png" alt="">
+                          </div><span>Тепловое оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__4.png" alt="">
+                          </div><span>Упаковочное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__5.png" alt="">
+                          </div><span>Холодильное оборудование</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 top-menu-sub__right">
+                    <div class="top-menu-sub__title">Типы бизнеса</div>
+                    <ul class="top-menu-sub__types">
+                      <li class="item"><a href="#"><span>Ресторан</span></a></li>
+                      <li class="item"><a href="#"><span>Кейтеринг</span></a></li>
+                      <li class="item"><a href="#"><span>Кондитерская</span></a></li>
+                      <li class="item"><a href="#"><span>Кофейня</span></a></li>
+                      <li class="item"><a href="#"><span>Кафе</span></a></li>
+                      <li class="item"><a href="#"><span>Пиццерия</span></a></li>
+                      <li class="item"><a href="#"><span>Столовая</span></a></li>
+                      <li class="item"><a href="#"><span>Фаст-фуд</span></a></li>
+                      <li class="item"><a href="#"><span>Бар</span></a></li>
+                      <li class="item"><a href="#"><span>Отель</span></a></li>
+                      <li class="item"><a href="#"><span>Суши-бар</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Посуда и предметы сервировки</a>
+            <ul class="top-menu-sub">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 top-menu-sub__left">
+                    <div class="top-menu-sub__title">Разделы каталога</div>
+                    <ul class="top-menu-sub__list">
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__1.png" alt="">
+                          </div><span>Измерительное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__2.png" alt="">
+                          </div><span>Оборудование для механической переработки</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__3.png" alt="">
+                          </div><span>Тепловое оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__4.png" alt="">
+                          </div><span>Упаковочное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__5.png" alt="">
+                          </div><span>Холодильное оборудование</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 top-menu-sub__right">
+                    <div class="top-menu-sub__title">Типы бизнеса</div>
+                    <ul class="top-menu-sub__types">
+                      <li class="item"><a href="#"><span>Ресторан</span></a></li>
+                      <li class="item"><a href="#"><span>Кейтеринг</span></a></li>
+                      <li class="item"><a href="#"><span>Кондитерская</span></a></li>
+                      <li class="item"><a href="#"><span>Кофейня</span></a></li>
+                      <li class="item"><a href="#"><span>Кафе</span></a></li>
+                      <li class="item"><a href="#"><span>Пиццерия</span></a></li>
+                      <li class="item"><a href="#"><span>Столовая</span></a></li>
+                      <li class="item"><a href="#"><span>Фаст-фуд</span></a></li>
+                      <li class="item"><a href="#"><span>Бар</span></a></li>
+                      <li class="item"><a href="#"><span>Отель</span></a></li>
+                      <li class="item"><a href="#"><span>Суши-бар</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Кухонный и кондитерский инвентарь</a>
+            <ul class="top-menu-sub">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 top-menu-sub__left">
+                    <div class="top-menu-sub__title">Разделы каталога</div>
+                    <ul class="top-menu-sub__list">
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__1.png" alt="">
+                          </div><span>Измерительное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__2.png" alt="">
+                          </div><span>Оборудование для механической переработки</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__3.png" alt="">
+                          </div><span>Тепловое оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__4.png" alt="">
+                          </div><span>Упаковочное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__5.png" alt="">
+                          </div><span>Холодильное оборудование</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 top-menu-sub__right">
+                    <div class="top-menu-sub__title">Типы бизнеса</div>
+                    <ul class="top-menu-sub__types">
+                      <li class="item"><a href="#"><span>Ресторан</span></a></li>
+                      <li class="item"><a href="#"><span>Кейтеринг</span></a></li>
+                      <li class="item"><a href="#"><span>Кондитерская</span></a></li>
+                      <li class="item"><a href="#"><span>Кофейня</span></a></li>
+                      <li class="item"><a href="#"><span>Кафе</span></a></li>
+                      <li class="item"><a href="#"><span>Пиццерия</span></a></li>
+                      <li class="item"><a href="#"><span>Столовая</span></a></li>
+                      <li class="item"><a href="#"><span>Фаст-фуд</span></a></li>
+                      <li class="item"><a href="#"><span>Бар</span></a></li>
+                      <li class="item"><a href="#"><span>Отель</span></a></li>
+                      <li class="item"><a href="#"><span>Суши-бар</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Барный инвентарь</a>
+            <ul class="top-menu-sub">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 top-menu-sub__left">
+                    <div class="top-menu-sub__title">Разделы каталога</div>
+                    <ul class="top-menu-sub__list">
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__1.png" alt="">
+                          </div><span>Измерительное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__2.png" alt="">
+                          </div><span>Оборудование для механической переработки</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__3.png" alt="">
+                          </div><span>Тепловое оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__4.png" alt="">
+                          </div><span>Упаковочное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__5.png" alt="">
+                          </div><span>Холодильное оборудование</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 top-menu-sub__right">
+                    <div class="top-menu-sub__title">Типы бизнеса</div>
+                    <ul class="top-menu-sub__types">
+                      <li class="item"><a href="#"><span>Ресторан</span></a></li>
+                      <li class="item"><a href="#"><span>Кейтеринг</span></a></li>
+                      <li class="item"><a href="#"><span>Кондитерская</span></a></li>
+                      <li class="item"><a href="#"><span>Кофейня</span></a></li>
+                      <li class="item"><a href="#"><span>Кафе</span></a></li>
+                      <li class="item"><a href="#"><span>Пиццерия</span></a></li>
+                      <li class="item"><a href="#"><span>Столовая</span></a></li>
+                      <li class="item"><a href="#"><span>Фаст-фуд</span></a></li>
+                      <li class="item"><a href="#"><span>Бар</span></a></li>
+                      <li class="item"><a href="#"><span>Отель</span></a></li>
+                      <li class="item"><a href="#"><span>Суши-бар</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Сиропы и продукты</a>
+            <ul class="top-menu-sub">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 top-menu-sub__left">
+                    <div class="top-menu-sub__title">Разделы каталога</div>
+                    <ul class="top-menu-sub__list">
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__1.png" alt="">
+                          </div><span>Измерительное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__2.png" alt="">
+                          </div><span>Оборудование для механической переработки</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__3.png" alt="">
+                          </div><span>Тепловое оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__4.png" alt="">
+                          </div><span>Упаковочное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__5.png" alt="">
+                          </div><span>Холодильное оборудование</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 top-menu-sub__right">
+                    <div class="top-menu-sub__title">Типы бизнеса</div>
+                    <ul class="top-menu-sub__types">
+                      <li class="item"><a href="#"><span>Ресторан</span></a></li>
+                      <li class="item"><a href="#"><span>Кейтеринг</span></a></li>
+                      <li class="item"><a href="#"><span>Кондитерская</span></a></li>
+                      <li class="item"><a href="#"><span>Кофейня</span></a></li>
+                      <li class="item"><a href="#"><span>Кафе</span></a></li>
+                      <li class="item"><a href="#"><span>Пиццерия</span></a></li>
+                      <li class="item"><a href="#"><span>Столовая</span></a></li>
+                      <li class="item"><a href="#"><span>Фаст-фуд</span></a></li>
+                      <li class="item"><a href="#"><span>Бар</span></a></li>
+                      <li class="item"><a href="#"><span>Отель</span></a></li>
+                      <li class="item"><a href="#"><span>Суши-бар</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Электронное  Оборудование</a>
+            <ul class="top-menu-sub">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 top-menu-sub__left">
+                    <div class="top-menu-sub__title">Разделы каталога</div>
+                    <ul class="top-menu-sub__list">
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__1.png" alt="">
+                          </div><span>Измерительное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__2.png" alt="">
+                          </div><span>Оборудование для механической переработки</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__3.png" alt="">
+                          </div><span>Тепловое оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__4.png" alt="">
+                          </div><span>Упаковочное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__5.png" alt="">
+                          </div><span>Холодильное оборудование</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 top-menu-sub__right">
+                    <div class="top-menu-sub__title">Типы бизнеса</div>
+                    <ul class="top-menu-sub__types">
+                      <li class="item"><a href="#"><span>Ресторан</span></a></li>
+                      <li class="item"><a href="#"><span>Кейтеринг</span></a></li>
+                      <li class="item"><a href="#"><span>Кондитерская</span></a></li>
+                      <li class="item"><a href="#"><span>Кофейня</span></a></li>
+                      <li class="item"><a href="#"><span>Кафе</span></a></li>
+                      <li class="item"><a href="#"><span>Пиццерия</span></a></li>
+                      <li class="item"><a href="#"><span>Столовая</span></a></li>
+                      <li class="item"><a href="#"><span>Фаст-фуд</span></a></li>
+                      <li class="item"><a href="#"><span>Бар</span></a></li>
+                      <li class="item"><a href="#"><span>Отель</span></a></li>
+                      <li class="item"><a href="#"><span>Суши-бар</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Униформа и предметы интерьера</a>
+            <ul class="top-menu-sub">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 top-menu-sub__left">
+                    <div class="top-menu-sub__title">Разделы каталога</div>
+                    <ul class="top-menu-sub__list">
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__1.png" alt="">
+                          </div><span>Измерительное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__2.png" alt="">
+                          </div><span>Оборудование для механической переработки</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__3.png" alt="">
+                          </div><span>Тепловое оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__4.png" alt="">
+                          </div><span>Упаковочное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__5.png" alt="">
+                          </div><span>Холодильное оборудование</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 top-menu-sub__right">
+                    <div class="top-menu-sub__title">Типы бизнеса</div>
+                    <ul class="top-menu-sub__types">
+                      <li class="item"><a href="#"><span>Ресторан</span></a></li>
+                      <li class="item"><a href="#"><span>Кейтеринг</span></a></li>
+                      <li class="item"><a href="#"><span>Кондитерская</span></a></li>
+                      <li class="item"><a href="#"><span>Кофейня</span></a></li>
+                      <li class="item"><a href="#"><span>Кафе</span></a></li>
+                      <li class="item"><a href="#"><span>Пиццерия</span></a></li>
+                      <li class="item"><a href="#"><span>Столовая</span></a></li>
+                      <li class="item"><a href="#"><span>Фаст-фуд</span></a></li>
+                      <li class="item"><a href="#"><span>Бар</span></a></li>
+                      <li class="item"><a href="#"><span>Отель</span></a></li>
+                      <li class="item"><a href="#"><span>Суши-бар</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Вспомогательный инвентарь</a>
+            <ul class="top-menu-sub">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 top-menu-sub__left">
+                    <div class="top-menu-sub__title">Разделы каталога</div>
+                    <ul class="top-menu-sub__list">
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__1.png" alt="">
+                          </div><span>Измерительное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__2.png" alt="">
+                          </div><span>Оборудование для механической переработки</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__3.png" alt="">
+                          </div><span>Тепловое оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__4.png" alt="">
+                          </div><span>Упаковочное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__5.png" alt="">
+                          </div><span>Холодильное оборудование</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 top-menu-sub__right">
+                    <div class="top-menu-sub__title">Типы бизнеса</div>
+                    <ul class="top-menu-sub__types">
+                      <li class="item"><a href="#"><span>Ресторан</span></a></li>
+                      <li class="item"><a href="#"><span>Кейтеринг</span></a></li>
+                      <li class="item"><a href="#"><span>Кондитерская</span></a></li>
+                      <li class="item"><a href="#"><span>Кофейня</span></a></li>
+                      <li class="item"><a href="#"><span>Кафе</span></a></li>
+                      <li class="item"><a href="#"><span>Пиццерия</span></a></li>
+                      <li class="item"><a href="#"><span>Столовая</span></a></li>
+                      <li class="item"><a href="#"><span>Фаст-фуд</span></a></li>
+                      <li class="item"><a href="#"><span>Бар</span></a></li>
+                      <li class="item"><a href="#"><span>Отель</span></a></li>
+                      <li class="item"><a href="#"><span>Суши-бар</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Хозяйственные товары</a>
+            <ul class="top-menu-sub">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 top-menu-sub__left">
+                    <div class="top-menu-sub__title">Разделы каталога</div>
+                    <ul class="top-menu-sub__list">
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__1.png" alt="">
+                          </div><span>Измерительное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__2.png" alt="">
+                          </div><span>Оборудование для механической переработки</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__3.png" alt="">
+                          </div><span>Тепловое оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__4.png" alt="">
+                          </div><span>Упаковочное оборудование</span></a></li>
+                      <li class="item"><a href="#">
+                          <div class="item__image"><img src="img/category__5.png" alt="">
+                          </div><span>Холодильное оборудование</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 top-menu-sub__right">
+                    <div class="top-menu-sub__title">Типы бизнеса</div>
+                    <ul class="top-menu-sub__types">
+                      <li class="item"><a href="#"><span>Ресторан</span></a></li>
+                      <li class="item"><a href="#"><span>Кейтеринг</span></a></li>
+                      <li class="item"><a href="#"><span>Кондитерская</span></a></li>
+                      <li class="item"><a href="#"><span>Кофейня</span></a></li>
+                      <li class="item"><a href="#"><span>Кафе</span></a></li>
+                      <li class="item"><a href="#"><span>Пиццерия</span></a></li>
+                      <li class="item"><a href="#"><span>Столовая</span></a></li>
+                      <li class="item"><a href="#"><span>Фаст-фуд</span></a></li>
+                      <li class="item"><a href="#"><span>Бар</span></a></li>
+                      <li class="item"><a href="#"><span>Отель</span></a></li>
+                      <li class="item"><a href="#"><span>Суши-бар</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="breadcrumbs-container">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__sep"><span>—</span></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Название родительского раздела 1 уровня</a></li>
+          <li class="breadcrumbs__sep"><span>—</span></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Название раздела 2 уровня</a></li>
+          <li class="breadcrumbs__sep"><span>—</span></li>
+          <li class="breadcrumbs__sep"><span>Раздела 3 уровня</span></li>
+        </ul>
+      </div>
+    </section>
+    <script src="vendor/fancybox/jquery.fancybox.js"></script>
+    <footer class="footer">
+      <section class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 footer-top__left">
+              <div class="title">Комплекс Бар</div>
+              <div class="phone"><i class="icon icon__phone--red"></i><span>8 (812) 489-45-65</span></div>
+              <div class="address">г. Санкт Петербург, Московский проспект, д. 12, лит А</div>
+              <form class="form-subscribe">
+                <label>Подписаться на рассылку </label>
+                <div class="group">
+                  <input type="mail" placeholder="Введите E-mail">
+                  <button type="submit"><i class="icon icon__arrow--circle--right"></i></button>
+                </div>
+              </form>
+              <button class="button button--red">Задать вопрос</button>
+              <div class="text-content">
+                <div class="text-content__title">Посуда для баров и ресторанов</div>
+                <p>Компания «Комплекс-бар» вот уже 20 лет является одним из лидеров в сфере обслуживания ресторанов, баров, кафе и гостиниц. Мы поставляем  рофессиональную посуду, барный и кухонный инвентарь, предметы сервировки стола от мировых производителей, а так же известные сиропы «Monin» для  коктейлей и десертов.</p>
+              </div>
+            </div>
+            <div class="col-sm-9 footer-top__right">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="footer-menu-group">
+                    <div class="footer-menu__title">Название раздела</div>
+                    <ul class="footer-menu">
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Стеклянная посуда и емкости</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Столовая посуда</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Столовые приборы</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Предметы сервировки</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="footer-menu-group">
+                    <div class="footer-menu__title">Сиропы и продукты</div>
+                    <ul class="footer-menu">
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Сиропы</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Топпинги</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Добавки</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Соусы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="footer-menu-group">
+                    <div class="footer-menu__title">Вспомогательный инвентарь</div>
+                    <ul class="footer-menu">
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Подносы</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контейнеры</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Мелкий инвентарь</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Стеллажи, стойки, тележки</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="footer-menu-group">
+                    <div class="footer-menu__title">Кухонный и кондитерский инвентарь</div>
+                    <ul class="footer-menu">
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Наплитная посуда</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Кухонный инвентарь</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Ножи</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Кондитерский инвентарь</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="footer-menu-group">
+                    <div class="footer-menu__title">Электронное Оборудование</div>
+                    <ul class="footer-menu">
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Оборудование для механической переработки</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Тепловое оборудование</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Холодильное оборудование</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Измерительное оборудование</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Упаковочное оборудование</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Запасные части и комплектующие</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="footer-menu-group">
+                    <div class="footer-menu__title">Униформа и предметы интерьера</div>
+                    <ul class="footer-menu">
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Униформа</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Текстиль</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Предметы интерьера</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="footer-menu-group">
+                    <div class="footer-menu__title">Барный инвентарь</div>
+                    <ul class="footer-menu">
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Инвентарь</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Украшения</a></li>
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Прочее</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="footer-menu-group">
+                    <div class="footer-menu__title">Хозяйственные товары </div>
+                    <ul class="footer-menu">
+                      <li class="footer-menu__item"><a href="#" class="footer-menu__link">Средства уборки</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="copyright">© 2007 — 2017 Комплекс Бар</div>
+            </div>
+            <div class="col-sm-6">
+              <ul class="inline-menu">
+                <li class="inline-menu__item"><a href="#" class="inline-menu__link">О компании</a></li>
+                <li class="inline-menu__item"><a href="#" class="inline-menu__link">Доставка</a></li>
+                <li class="inline-menu__item"><a href="#" class="inline-menu__link">Наши услуги</a></li>
+                <li class="inline-menu__item"><a href="#" class="inline-menu__link">Контакты</a></li>
+                <li class="inline-menu__item"><a href="#" class="inline-menu__link">Курс у.е.</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 text-right">
+              <div class="social"><a href="#" class="social__item"><i class="icon icon__vk"></i></a><a href="#" class="social__item"><i class="icon icon__fb"></i></a><a href="#" class="social__item"><i class="icon icon__twitter"></i></a><a href="#" class="social__item"><i class="icon icon__ok"></i></a><a href="#" class="social__item"><i class="icon icon__mailru"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>

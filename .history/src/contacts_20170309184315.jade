@@ -1,0 +1,10 @@
+- var pageTitle = "Контакты"
+
+include templates/head.jade
+body
+	.page-wrapper
+		- var breadcrumbs = ["Главная", "Название родительского раздела 1 уровня", "Название раздела 2 уровня", "Раздела 3 уровня"]
+		include sections/header/index.jade
+		include sections/contacts-map/index.jade
+		include sections/contacts-list/index.jade
+		include sections/footer/index.jade
